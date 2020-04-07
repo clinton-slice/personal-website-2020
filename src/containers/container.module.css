@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.mainContainer {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+  z-index: 2;
+}
+
+.mainContainer::-webkit-scrollbar {
+  display: none;
+}
+.fixedContainer {
+  position: fixed;
+  flex: 1;
+  width: inherit;
+}
+
+.leftSection {
+  flex: 1;
+  width: 50%;
+  min-width: 400px;
+  z-index: 1;
+}
+
+.rightSection {
+  flex: 1;
+  width: 55%;
+  min-width: 400px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .fixedContainer {
+    position: initial;
+    width: 100%;
+  }
+  .leftSide {
+    width: 100%;
+  }
+  .rightSide {
+    width: 100%;
+  }
+}
