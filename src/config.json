@@ -9,23 +9,28 @@
     "contacts": [
       {
         "name": "linkedin",
-        "url": "https://linkedin.com/in/clinton-nkemdilim/"
+        "url": "https://linkedin.com/in/clinton-nkemdilim/",
+        "imageSrc": "images/linkedin.svg"
       },
       {
         "name": "github",
-        "url": "https://github.com/clinton-slice"
+        "url": "https://github.com/clinton-slice",
+        "imageSrc": "images/github.svg"
       },
       {
         "name": "codepen",
-        "url": "https://codepen.io/clinton-nkemdilim"
+        "url": "https://codepen.io/clinton-nkemdilim",
+        "imageSrc": "images/codepen.svg"
       },
       {
         "name": "instagram",
-        "url": "https://instagram.com/sir_clinton"
+        "url": "https://instagram.com/sir_clinton",
+        "imageSrc": "images/instagram.svg"
       },
       {
         "name": "facebook",
-        "url": "https://facebook.com/clintonnkemdilim"
+        "url": "https://facebook.com/clintonnkemdilim",
+        "imageSrc": "images/facebook.svg"
       }
     ]
   },
