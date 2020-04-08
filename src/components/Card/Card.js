@@ -1,13 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./Card.module.css";
+import Section from "./styledComponents";
 
-const Card = ({ children }) => {
-  return <div className={styles.section}>{children}</div>;
+const Card = ({ className, color, text, children }) => {
+  return (
+    <Section className={className} color={color} text={text}>
+      {children}
+    </Section>
+  );
 };
 
 Card.propTypes = {
   children: PropTypes.element.isRequired,
+  text: PropTypes.string,
+  color: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default Card;
