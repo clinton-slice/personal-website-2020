@@ -1,29 +1,29 @@
 import React from "react";
-
+import { ThemeProvider, withTheme } from "styled-components";
 import { personalInfo, education, experiences, theme } from "config";
+import { Main, FixedContent, LeftSection, RightSection } from "../sections";
 import {
-  MainContainer,
-  FixedContainer,
-  LeftSection,
-  RightSection,
-} from "../containers";
-import { BusinessCard } from "../components";
+  BusinessCard,
+  EducationFactory,
+  ExperiencesFactory,
+} from "../components";
 
 const App = () => {
   return (
-    <MainContainer>
-      <>
+    <ThemeProvider theme={theme}>
+      <Main>
         <LeftSection>
-          <FixedContainer>
+          <FixedContent>
             <BusinessCard personalInfo={personalInfo} />
-          </FixedContainer>
+            <EducationFactory education={education} />
+          </FixedContent>
         </LeftSection>
         <RightSection>
-          <p>Right</p>
+          <ExperiencesFactory experiences={experiences} />
         </RightSection>
-      </>
-    </MainContainer>
+      </Main>
+    </ThemeProvider>
   );
 };
 
-export default App;
+export default withTheme(App);
