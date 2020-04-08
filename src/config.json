@@ -10,27 +10,32 @@
       {
         "name": "linkedin",
         "url": "https://linkedin.com/in/clinton-nkemdilim/",
-        "imageSrc": "images/linkedin.svg"
+        "color": "#2d76b0",
+        "fill": "#2D76B0"
       },
       {
         "name": "github",
         "url": "https://github.com/clinton-slice",
-        "imageSrc": "images/github.svg"
+        "color": "#000",
+        "fill": "#000"
       },
       {
         "name": "codepen",
         "url": "https://codepen.io/clinton-nkemdilim",
-        "imageSrc": "images/codepen.svg"
+        "color": "#000",
+        "fill": "#000"
       },
       {
         "name": "instagram",
         "url": "https://instagram.com/sir_clinton",
-        "imageSrc": "images/instagram.svg"
+        "color": "#9a2970",
+        "fill": "url(#simpleInsta)"
       },
       {
         "name": "facebook",
         "url": "https://facebook.com/clintonnkemdilim",
-        "imageSrc": "images/facebook.svg"
+        "color": "#3b5998",
+        "fill": "#3b5998"
       }
     ]
   },

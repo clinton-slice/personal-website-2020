@@ -12,14 +12,16 @@ import { BusinessCard } from "../components";
 const App = () => {
   return (
     <MainContainer>
-      <LeftSection>
-        <FixedContainer>
-          <BusinessCard personalInfo={personalInfo} />
-        </FixedContainer>
-      </LeftSection>
-      <RightSection>
-        <p>Right</p>
-      </RightSection>
+      <>
+        <LeftSection>
+          <FixedContainer>
+            <BusinessCard personalInfo={personalInfo} />
+          </FixedContainer>
+        </LeftSection>
+        <RightSection>
+          <p>Right</p>
+        </RightSection>
+      </>
     </MainContainer>
   );
 };

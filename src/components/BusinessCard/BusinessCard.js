@@ -11,23 +11,25 @@ const BusinessCard = ({ personalInfo }) => {
 
   return (
     <Card>
-      <div className={styles.container}>
-        <ImageContainer>
-          <img src={profileImage} width="127.433px" height="132.743px"></img>
-        </ImageContainer>
-      </div>
-      <p className={styles.title}>
-        {firstName}
-        <strong> {lastName}</strong>
-      </p>
-
-      <p className={styles.jobTitle}>
-        {jobTitle}
-        <div>
-          <small>{location}</small>
+      <>
+        <div className={styles.container}>
+          <ImageContainer>
+            <img src={profileImage} width="127.433px" height="132.743px"></img>
+          </ImageContainer>
         </div>
-      </p>
-      <Contacts contactInfo={contacts} />
+        <p className={styles.title}>
+          {firstName}
+          <strong> {lastName}</strong>
+        </p>
+
+        <p className={styles.jobTitle}>
+          {jobTitle}
+          <div>
+            <small>{location}</small>
+          </div>
+        </p>
+        <Contacts contactInfo={contacts} />
+      </>
     </Card>
   );
 };
