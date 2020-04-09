@@ -1,6 +1,6 @@
 ### Build your own version
 
-I wanted to build something reuseable. By changing this file, you can adapt the template to your own experiences and within some minutes, build your own personal website.
+I wanted to build something reuseable. By changing the [config](https://github.com/clinton-slice/personal-website-2020/blob/develop/src/config.json) file, you can adapt the template to your own experiences and within some minutes, build your own personal website.
 
 ```js
 {
