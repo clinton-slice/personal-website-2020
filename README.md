@@ -1,3 +1,7 @@
+This projects contains really nice css animation and shows outstanding react skills. The website was built using gatsby
+
+The idea and motivation to build this was based on [Thiago Loschi's](https://github.com/thiagoloschi) version of the website. Check his repo here [personal website 2019](https://github.com/thiagoloschi/personal-website-2019)
+
 ### Build your own version
 
 I wanted to build something reuseable. By changing the [config](https://github.com/clinton-slice/personal-website-2020/blob/develop/src/config.json) file, you can adapt the template to your own experiences and within some minutes, build your own personal website.
