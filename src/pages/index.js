@@ -1,7 +1,4 @@
 import React from "react";
-import App from "./App";
-export default () => (
-  <div>
-    <App />
-  </div>
-);
+import "./css/css-module.css";
+import MainPage from "./MainPage";
+export default () => <MainPage />;

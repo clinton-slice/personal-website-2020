@@ -1,33 +1,53 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Card, Contacts } from "../../components";
-import styles from "./BusinessCard.module.css";
+import {
+  Name,
+  JobTitle,
+  ImageContainer,
+  DownloadButton,
+  Summay,
+} from "./styledComponents";
 import profileImage from "../../images/profile.jpg";
-import styled, { keyframes } from "styled-components";
+import myResume from "../../images/resume.pdf";
+import { withPrefix } from "gatsby";
 
 const BusinessCard = ({ personalInfo }) => {
-  const { name, jobTitle, location, contacts } = personalInfo;
+  const { name, jobTitle, location, contacts, summary, ctaText } = personalInfo;
   const { firstName, lastName } = name;
 
   return (
-    <Card>
-      <div className={styles.container}>
+    <Card color={"linear-gradient(-60deg, #ff5858 0%, #f09819 100%);"}>
+      <>
         <ImageContainer>
-          <img src={profileImage} width="127.433px" height="132.743px"></img>
+          <div className="image">
+            <img
+              src={profileImage}
+              width="127.433px"
+              height="132.743px"
+              alt="profilePhoto"
+            ></img>
+          </div>
         </ImageContainer>
-      </div>
-      <p className={styles.title}>
-        {firstName}
-        <strong> {lastName}</strong>
-      </p>
-
-      <p className={styles.jobTitle}>
-        {jobTitle}
-        <div>
+        <Name>
+          {firstName}
+          <strong> {lastName}</strong>
+        </Name>
+        <JobTitle>
+          {jobTitle}
           <small>{location}</small>
-        </div>
-      </p>
-      <Contacts contactInfo={contacts} />
+        </JobTitle>
+        <Contacts contactInfo={contacts} />
+        <Summay>{summary}</Summay>
+        <DownloadButton
+          className="button"
+          rel="noopener noreferrer"
+          href={withPrefix(myResume)}
+          target="_blank"
+        >
+          {ctaText}
+        </DownloadButton>
+      </>
     </Card>
   );
 };
@@ -40,26 +60,5 @@ BusinessCard.propTypes = {
   jobTitle: PropTypes.string,
   contacts: PropTypes.array,
 };
-
-const imageAnimate = keyframes`
-  50% {
-    transform: translate(0, 20px);
- }
-`;
-const ImageContainer = styled.div`
-  width: 150px;
-  height: 150px;
-  box-sizing: border-box;
-  border: 5px white solid;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-  transform: translatey(0px);
-  animation: ${imageAnimate} 3s ease-in-out infinite;
-  img {
-    width: 100%;
-    height: auto;
-  }
-`;
 
 export default BusinessCard;
