@@ -174,6 +174,9 @@ A demo can be seen live at my own personal website: [https://clintonnkemdilim.no
 <br />
 
 **Mobile:** 📱
+
+<br />
+
 ![](https://github.com/clinton-slice/personal-website-2020/blob/develop/images/mobileview.png)
 
 
