@@ -9,7 +9,7 @@ const BusinessCard = ({ personalInfo }) => {
   const { firstName, lastName } = name;
 
   return (
-    <Card>
+    <Card color={"linear-gradient(-60deg, #ff5858 0%, #f09819 100%);"}>
       <>
         <ImageContainer>
           <div className="image">

@@ -29,7 +29,6 @@ export const ContainedCard = styled(Card)`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 512px;
 `;
 
 export const InfoSection = styled.article`

@@ -13,8 +13,9 @@ export const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   & .image {
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: auto;
+    background-color: white;
     box-sizing: border-box;
     border: 5px white solid;
     border-radius: 50%;
@@ -30,7 +31,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Name = styled.p`
-  font-size: 48px;
+  font-size: 35px;
   text-align: center;
 `;
 

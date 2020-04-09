@@ -8,7 +8,7 @@ import {
   ExperiencesFactory,
 } from "../components";
 
-const App = () => {
+const MainPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Main>
@@ -26,4 +26,4 @@ const App = () => {
   );
 };
 
-export default withTheme(App);
+export default withTheme(MainPage);
