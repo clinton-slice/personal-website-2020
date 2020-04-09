@@ -3,7 +3,7 @@
   "private": true,
   "description": "2020 website version",
   "version": "0.1.0",
-  "author": "Thiago Loschi",
+  "author": "Clinton Nkemdilim",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
