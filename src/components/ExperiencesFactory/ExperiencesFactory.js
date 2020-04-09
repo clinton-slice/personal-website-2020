@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Title, Date, ImageWrapper } from "../Card/styledComponents";
-import { FixedSizeCard, Image, Description, Company } from "./styledComponents";
-import EducationFactory from "../EducationFactory";
+import { Title, Date } from "../Card/styledComponents";
+import { FixedSizeCard, Description, Company } from "./styledComponents";
 
 const ExperienceCard = ({
   period,
@@ -10,8 +9,6 @@ const ExperienceCard = ({
   company,
   location,
   description,
-  url,
-  image,
   color,
   text,
 }) => {
@@ -19,26 +16,25 @@ const ExperienceCard = ({
 
   return (
     <FixedSizeCard color={color} text={text}>
-      <Title>
-        <Company>{company}</Company>
-        <Date>
-          {beginDate} - {endDate}
-        </Date>
-      </Title>
-      <p>
-        {jobTitle} - <small>{location}</small>
-      </p>
-      <Description>{description}</Description>
-      {/* <ImageWrapper href={url} target="_blank" rel="noopener noreferrer">
-        <Image src={image} title={company} alt={company} />
-      </ImageWrapper> */}
+      <>
+        <Title>
+          <Company>{company}</Company>
+          <Date>
+            {beginDate} - {endDate}
+          </Date>
+        </Title>
+        <p>
+          {jobTitle} - <small>{location}</small>
+        </p>
+        <Description>{description}</Description>
+      </>
     </FixedSizeCard>
   );
 };
 const ExperiencesFactory = ({ experiences }) => {
-  const Experiences = experiences.map((info) => (
-    <ExperienceCard {...info} key={info.company} />
-  ));
+  const Experiences =
+    Array.isArray(experiences) &&
+    experiences.map((info) => <ExperienceCard {...info} key={info.company} />);
   return <>{Experiences}</>;
 };
 
@@ -60,4 +56,4 @@ ExperienceCard.propTypes = {
   text: PropTypes.string,
 };
 
-export default EducationFactory;
+export default ExperiencesFactory;

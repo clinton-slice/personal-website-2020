@@ -36,9 +36,9 @@ const EducationCard = ({ period, school, major, type, place, badge, url }) => {
 };
 
 const EducationFactory = ({ education }) => {
-  const Education = education.map((info) => (
-    <EducationCard {...info} key={info.school} />
-  ));
+  const Education =
+    Array.isArray(education) &&
+    education.map((info) => <EducationCard {...info} key={info.school} />);
   return <>{Education}</>;
 };
 

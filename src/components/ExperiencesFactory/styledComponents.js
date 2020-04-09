@@ -16,8 +16,10 @@ export const Image = styled.img`
 `;
 
 export const Description = styled.p`
-  opacity: 0.8;
-  text-align: justify;
+  opacity: 0.9;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-size: 0.8rem;
 `;
 
 export const Company = styled.p`
