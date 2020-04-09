@@ -135,7 +135,7 @@
       "description": "Successfully completed an intense 12 weeks Full-Immersion Web Development Training Bootcamp\n\n During this training, I was exposed to work-like, project-oriented environment that was focused on coding around specific technologies as well as frameworks/libraries \n\n Trained in building and deploying outstanding web applications using HTML5, CSS, JavaScript and Hypertext Preprocessor (PHP)",
       "url": "https://instmanager.herokuapp.com",
       "image": "https://instmanager.herokuapp.com/img/main.png",
-      "color": "#2575fc",
+      "color": "rgb(59, 89, 152)",
       "text": "#fff"
     }
   ],
