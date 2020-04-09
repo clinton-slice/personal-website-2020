@@ -9,6 +9,7 @@ export const Main = styled.main`
   justify-content: space-around;
   max-height: 100vh;
   background-color: ${({ theme }) => theme.color};
+  
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 2;
@@ -19,11 +20,10 @@ export const Main = styled.main`
 `;
 
 export const LeftSection = styled.section`
-  flex: 1 1 0%;
+  flex: 1;
   width: 50%;
   min-width: 400px;
   z-index: 1;
-
   @media only screen and (max-width: 1024px) {
     width: 100%;
   }
