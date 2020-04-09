@@ -1,99 +1,155 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
+### Build your own version
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+I wanted to build something reuseable. By changing the [config](https://github.com/clinton-slice/personal-website-2020/blob/develop/src/config.json) file, you can adapt the template to your own experiences and within some minutes, build your own personal website.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+```js
+{
+  "personalInfo": {
+    "name": {
+      "firstName": "Clinton",
+      "lastName": "Nkemdilim"
+    },
+    "jobTitle": "Front End Engineer",
+    "location": "Ottawa, Canada",
+    "summary": "Highly skilled and resourceful UI Developer, possessing strong analytical thought process, creative thinking, problem solving and interpersonal skills focused on creating engaging and interactive user applications.",
+    "ctaText": "Download my Resume",
+    "contacts": [
+      {
+        "name": "linkedin",
+        "url": "https://linkedin.com/in/clinton-nkemdilim/",
+        "color": "#2d76b0",
+        "fill": "#2D76B0"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/clinton-slice",
+        "color": "#000",
+        "fill": "#000"
+      },
+      {
+        "name": "codepen",
+        "url": "https://codepen.io/clinton-nkemdilim",
+        "color": "#000",
+        "fill": "#000"
+      },
+      {
+        "name": "instagram",
+        "url": "https://instagram.com/sir_clinton",
+        "color": "#9a2970",
+        "fill": "url(#simpleInsta)"
+      },
+      {
+        "name": "facebook",
+        "url": "https://facebook.com/clintonnkemdilim",
+        "color": "#3b5998",
+        "fill": "#3b5998"
+      }
+    ]
+  },
+  "education": [
+    {
+      "period": {
+        "beginDate": "2017",
+        "endDate": "2018"
+      },
+      "school": "Carleton University",
+      "major": "Information Technology (Network Technologies)",
+      "type": "Masters of Information Technology",
+      "place": "Ottawa, Canada",
+      "badge": "http://seekvectorlogo.com/wp-content/uploads/2018/03/carleton-university-vector-logo.png",
+      "url": "https://carleton.ca/"
+    },
+    {
+      "period": {
+        "beginDate": "2011",
+        "endDate": "2015"
+      },
+      "school": "Babcock University",
+      "major": "Computer Science",
+      "type": "Bachelor of Science",
+      "place": "Ogun, Nigeria",
+      "badge": "http://academix.ng/blog/wp-content/uploads/2017/09/Babcock-University-logo.jpg",
+      "url": "https://www.babcock.edu.ng/"
+    }
+  ],
+  "experiences": [
+    {
+      "period": {
+        "beginDate": "Nov 2019",
+        "endDate": "current"
+      },
+      "jobTitle": "Front End Engineer",
+      "company": "Slice Labs",
+      "location": "Ottawa, Canada",
+      "description": "Currently working in a team consisting of unique and creative individuals focused on building compelling user facing applications which delivers ground-breaking services that provide new innovative insurance solutions directly to end users.\n\n Building web and mobile applications using top-notch technologies such as like React, React Native, Webpack, Babel, Apollo, Github, RESTful APIs and GraphQL. Performing JavaScript testing/ automation with tools such as enzyme, jest and chai. Making use of typing tools such as Flow or TypeScript",
+      "url": "https://slice.is/",
+      "image": "",
+      "color": "#d1384b",
+      "text": "#fff"
+    },
+    {
+      "period": {
+        "beginDate": "June 2018",
+        "endDate": "October 2019"
+      },
+      "jobTitle": "Computing Specialist and Web developer",
+      "company": "Carleton University Online (CUOL)",
+      "location": "Ottawa, Canada",
+      "description": "This role at Carleton University provided me with the opportunity to improve my Web developing skills and my knowledge of quality video content delivery. It involved me being responsible for managing, providing strategic planning and innovation around the video delivery infrastructure at Carleton University Online (CUOL).\n\n In this position I worked with PHP, Python and JavaScript libraries such as jQuery to build various UIs/Admin interfaces for various in-house build systems\n\n Implemented the convocation video web application utilizing YouTube Data API with React and Redux on the front end\n\n Built integration around content management system APIs from Kaltura",
+      "url": "https://carleton.ca/cuol/",
+      "image": "https://www.kaszek.com/wp-content/uploads/2018/03/qa.png",
+      "color": "#191919",
+      "text": "#fff"
+    },
+    {
+      "period": {
+        "beginDate": "January 2017",
+        "endDate": "June 2018"
+      },
+      "jobTitle": "Freelance Web Developer",
+      "company": "Self",
+      "location": "Ottawa, Canada",
+      "description": "During this time, I was enrolled in a graduate program at Carleton University but due to the limitations in my study permit, I decided to become a freelancer. I was opportune to work with different clients on various projects. Some of the projects include:\n\n - Designed a customer web form for a local skincare clinic\n\n - Used React.js to develop a searchable YouTube web application\n\n - Online Newspaper 'Vanguard' - vanguardngr.com: Created and defined news categories for newspaper Web site to improve user experience.",
+      "url": "https://carleton.ca/cuol/",
+      "image": "https://www.kaszek.com/wp-content/uploads/2018/03/qa.png",
+      "color": "#fafafa",
+      "text": "#333333"
+    },
+    {
+      "period": {
+        "beginDate": "September 2015",
+        "endDate": "December 2016"
+      },
+      "jobTitle": "Junior Full Stack Developer ",
+      "company": "MRS Oil and Gas",
+      "location": "Lagos, Nigeria",
+      "description": "After successful completion of my bachelor’s degree at Babcock University, I was hired in a team of outstanding and experienced developers at MRS Oil and Gas. The main focus of the team was in building and maintaining a real time PMS carrier tracking system for retailer clients around Nigeria.\n\n My primary responsibilities were to analyze, design and build new components \n\n Technologies used in the project includes JavaScript ES6, React.js, Redux, Python, PHP, Git and Jira",
+      "url": "https://www.mrsoilnigplc.net/",
+      "image": "https://scontent.fcgh23-1.fna.fbcdn.net/v/t31.0-8/17635230_1487664674639567_6041624776622573815_o.jpg?_nc_cat=107&_nc_ht=scontent.fcgh23-1.fna&oh=6c1f6872873769658634a387beed7640&oe=5CA429CA",
+      "color": "#7E0224",
+      "text": "#fff"
+    },
+    {
+      "period": {
+        "beginDate": "June 2014",
+        "endDate": "August 2014"
+      },
+      "jobTitle": "Web Developer",
+      "company": "Ritan360",
+      "location": "Lagos, Nigeria",
+      "description": "Successfully completed an intense 12 weeks Full-Immersion Web Development Training Bootcamp\n\n During this training, I was exposed to work-like, project-oriented environment that was focused on coding around specific technologies as well as frameworks/libraries \n\n Trained in building and deploying outstanding web applications using HTML5, CSS, JavaScript and Hypertext Preprocessor (PHP)",
+      "url": "https://instmanager.herokuapp.com",
+      "image": "https://instmanager.herokuapp.com/img/main.png",
+      "color": "rgb(59, 89, 152)",
+      "text": "#fff"
+    }
+  ],
+  "theme": {
+    "color": "#fff",
+    "fontUrl": "https://fonts.googleapis.com/css?family=Montserrat",
+    "fontName": "'Montserrat', sans-serif",
+    "fontColor": "#000"
+  }
+}
 
-## 🚀 Quick start
-
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
-
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
-
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+```
