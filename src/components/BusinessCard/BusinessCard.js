@@ -9,24 +9,30 @@ const BusinessCard = ({ personalInfo }) => {
   const { firstName, lastName } = name;
 
   return (
-    <Card color={"linear-gradient(-60deg, #ff5858 0%, #f09819 100%);"}>
-      <>
-        <ImageContainer>
-          <div className="image">
-            <img src={profileImage} width="127.433px" height="132.743px"></img>
-          </div>
-        </ImageContainer>
-        <Name>
-          {firstName}
-          <strong> {lastName}</strong>
-        </Name>
-        <JobTitle>
-          {jobTitle}
-          <small>{location}</small>
-        </JobTitle>
-        <Contacts contactInfo={contacts} />
-      </>
-    </Card>
+    <>
+      <Card color={"linear-gradient(-60deg, #ff5858 0%, #f09819 100%);"}>
+        <>
+          <ImageContainer>
+            <div className="image">
+              <img
+                src={profileImage}
+                width="127.433px"
+                height="132.743px"
+              ></img>
+            </div>
+          </ImageContainer>
+          <Name>
+            {firstName}
+            <strong> {lastName}</strong>
+          </Name>
+          <JobTitle>
+            {jobTitle}
+            <small>{location}</small>
+          </JobTitle>
+          <Contacts contactInfo={contacts} />
+        </>
+      </Card>
+    </>
   );
 };
 

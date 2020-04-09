@@ -43,39 +43,3 @@ export const JobTitle = styled.p`
     display: block;
   }
 `;
-
-export const AnimatedBall = styled.div`
-  display: block;
-  width: 100px;
-  height: 100px;
-  background: red;
-  border-radius: 50%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-
-  animation: ${spin} 1000ms linear infinite,
-    ${moveLeftToRight} 5s linear infinite;
-
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-
-  position: absolute;
-  left: 0;
-`;
-
-const spin = keyframes`
-from { 
-  transform: rotate(0deg); 
-}
-to { 
-  transform: rotate(360deg); 
-}
-`;
-
-const moveLeftToRight = keyframes`
-0%   { 
-  left: -100px; 
-}
-  100% { 
-    left: 100%; 
-  }
-`;
