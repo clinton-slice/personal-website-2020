@@ -1,11 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Card, Contacts } from "../../components";
-import { Name, JobTitle, ImageContainer } from "./styledComponents";
+import {
+  Name,
+  JobTitle,
+  ImageContainer,
+  DownloadButton,
+  Summay,
+} from "./styledComponents";
 import profileImage from "../../images/profile.jpg";
+import myResume from "../../images/resume.pdf";
+import { withPrefix } from "gatsby";
 
 const BusinessCard = ({ personalInfo }) => {
-  const { name, jobTitle, location, contacts } = personalInfo;
+  const { name, jobTitle, location, contacts, summary, ctaText } = personalInfo;
   const { firstName, lastName } = name;
 
   return (
@@ -13,7 +21,12 @@ const BusinessCard = ({ personalInfo }) => {
       <>
         <ImageContainer>
           <div className="image">
-            <img src={profileImage} width="127.433px" height="132.743px"></img>
+            <img
+              src={profileImage}
+              width="127.433px"
+              height="132.743px"
+              alt="profilePhoto"
+            ></img>
           </div>
         </ImageContainer>
         <Name>
@@ -25,6 +38,15 @@ const BusinessCard = ({ personalInfo }) => {
           <small>{location}</small>
         </JobTitle>
         <Contacts contactInfo={contacts} />
+        <Summay>{summary}</Summay>
+        <DownloadButton
+          className="button"
+          rel="noopener noreferrer"
+          href={withPrefix(myResume)}
+          target="_blank"
+        >
+          {ctaText}
+        </DownloadButton>
       </>
     </Card>
   );
