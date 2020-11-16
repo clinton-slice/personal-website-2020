@@ -1,6 +1,5 @@
 This projects contains really nice css animation and shows outstanding react skills. The website was built using gatsby
 
-The idea and motivation to build this was based on [Thiago Loschi's](https://github.com/thiagoloschi) version of the website. Check his repo here [personal website 2019](https://github.com/thiagoloschi/personal-website-2019)
 
 ### Build your own version
 
