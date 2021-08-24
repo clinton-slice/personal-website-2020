@@ -9,7 +9,7 @@ import {
   Summary,
 } from "./styledComponents";
 import profileImage from "../../images/profile.jpg";
-import myResume from "../../images/resume.pdf";
+import myResume from "../../images/clinton_nkemdilim_resume.pdf";
 import { withPrefix } from "gatsby";
 
 const BusinessCard = ({ personalInfo }) => {
@@ -18,7 +18,6 @@ const BusinessCard = ({ personalInfo }) => {
 
   return (
     <Card color={"linear-gradient(-60deg, #ff5858 0%, #f09819 100%);"}>
-      <>
         <ImageContainer>
           <div className="image">
             <img
@@ -47,7 +46,6 @@ const BusinessCard = ({ personalInfo }) => {
         >
           {ctaText}
         </DownloadButton>
-      </>
     </Card>
   );
 };
