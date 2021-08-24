@@ -45,56 +45,42 @@ export const JobTitle = styled.p`
 `;
 
 export const DownloadButton = styled.a`
-   {
-    display: flex;
-    overflow: hidden;
-
-    margin: 0 52px;
-    padding: 12px 12px;
-    background: #161616;
-
-    cursor: pointer;
-    user-select: none;
+  display: flex;
+  overflow: hidden;
+  margin: 0 52px;
+  padding: 12px 12px;
+  background: #161616;
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms linear;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
+  border: 0 none;
+  border-radius: 36px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 160px;
+  &:hover {
     transition: all 150ms linear;
-    text-align: center;
-    text-transform: capitalize;
-    text-decoration: none;
 
-    color: #fff;
-    border: 0 none;
-    border-radius: 36px;
-
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.3;
-
-    justify-content: center;
-    align-items: center;
-    flex: 0 0 160px;
-
-    &:hover {
-      transition: all 150ms linear;
-
-      opacity: 0.85;
-    }
-
-    &:active {
-      transition: all 150ms linear;
-      opacity: 0.75;
-    }
-
-    &:focus {
-      outline: 1px dotted #959595;
-      outline-offset: -4px;
-    }
+    opacity: 0.85;
+  }
+  &:active {
+    transition: all 150ms linear;
+    opacity: 0.75;
   }
   &:focus {
-    outline: 1px dotted white;
+    outline: 1px dotted #959595;
     outline-offset: -4px;
   }
 `;
 
-export const Summay = styled.p`
+export const Summary = styled.p`
   margin: 8px 0;
   text-align: center;
   font-size: 0.9rem;

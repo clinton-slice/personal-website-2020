@@ -20,29 +20,26 @@ const svgAnimate = keyframes`
 
 export const SocialIconLink = styled.a`
   color: ${({ color, theme }) => color || theme.color};
-  & .social-svg {
+  margin: 0px 20px;
+`;
+
+export const SVG = styled.svg`
+  width: 2.8rem;
+  height: 2.8rem;
+  &:hover,
+  &:active,
+  &:focus {
+    animation: ${svgAnimate} 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  & .social-group__outline {
+    transform-origin: 50% 50%;
+    transform: scale(1.1);
+  }
+  @media (max-width: 768px) {
     width: 2.8rem;
     height: 2.8rem;
-    & .social-group {
-      &__outline {
-        transform-origin: 50% 50%;
-        transform: scale(1.1);
-      }
-    }
-    &:hover,
-    &:active,
-    &:focus {
-      animation: ${svgAnimate} 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-      transform: translate3d(0, 0, 0);
-      backface-visibility: hidden;
-      perspective: 1000px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .social-svg {
-      width: 2.8rem;
-      height: 2.8rem;
-    }
   }
 `;

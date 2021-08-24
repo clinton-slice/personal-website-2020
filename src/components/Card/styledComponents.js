@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const Section = styled.section`
   padding: 2rem;
-
   margin: auto;
   background: ${({ color, theme }) => color || theme.color};
   color: ${({ text, theme }) => text || theme.fontColor};

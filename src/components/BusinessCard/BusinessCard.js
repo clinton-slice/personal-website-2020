@@ -6,7 +6,7 @@ import {
   JobTitle,
   ImageContainer,
   DownloadButton,
-  Summay,
+  Summary,
 } from "./styledComponents";
 import profileImage from "../../images/profile.jpg";
 import myResume from "../../images/resume.pdf";
@@ -38,7 +38,7 @@ const BusinessCard = ({ personalInfo }) => {
           <small>{location}</small>
         </JobTitle>
         <Contacts contactInfo={contacts} />
-        <Summay>{summary}</Summay>
+        <Summary>{summary}</Summary>
         <DownloadButton
           className="button"
           rel="noopener noreferrer"

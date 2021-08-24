@@ -5,7 +5,6 @@ export const FixedSizeCard = styled(Card)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 790px;
 `;
 
 export const Image = styled.img`
@@ -19,11 +18,19 @@ export const Description = styled.p`
   opacity: 0.9;
   line-height: 20px;
   letter-spacing: 0.2px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 `;
 
 export const Company = styled.p`
   margin: unset;
   font-size: 1.5rem;
   font-weight: bold;
+`;
+
+export const Duties = styled.ul`
+padding-left: 24px;
+font-size: 0.9rem;
+& > li {
+  padding: 4px 0px;
+}
 `;
