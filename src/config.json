@@ -64,6 +64,29 @@
   "experiences": [
     {
       "period": {
+        "beginDate": "Jan 2021",
+        "endDate": "Current"
+      },
+      "jobTitle": "Senior Frontend Developer",
+      "company": "Ross Video",
+      "location": "Ottawa, Canada",
+      "description": "Currently working in this great live television production company, as a software developer building out an amazing framework and complex component library.",
+      "duties": [
+        "Gathered, defined, and translated business requirements into product stories and actionable tasks.",
+        "Worked closely with product managers and design team in developing an internal cross browser React component library.",
+        "Contributed to architecting and developing an internal web framework to be used by multiple products.",
+        "Accelerated several testing practices, tools & strategies such as TDD, Jest, React Testing Library and E2E Testing with Playwright.",
+        "Championed and trained the team in building accessible components.",
+        "Mentored and trained other team members on design techniques and coding standards."
+      ],
+      "technologies": "React, Azure DevOps, Redux",
+      "url": "https://www.treehousemedical.ca/",
+      "image": "https://twitter.com/TreehouseMed/photo",
+      "color": "#EF3829",
+      "text": "#fff"
+    },
+    {
+      "period": {
         "beginDate": "Oct 2020",
         "endDate": "Jan 2021"
       },
